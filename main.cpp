@@ -27,9 +27,8 @@ void task_5(){
 
 int main(){
     //task_1();
-    //task_4();
-    //std::cout<<  convertDecToBin(25);
     //task_2();
+    //task_4();
     //task_5();
     return 0;
 }
