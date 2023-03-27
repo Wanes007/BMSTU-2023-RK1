@@ -1,0 +1,16 @@
+# ninja log v5
+3	2141	7011768604251996	CMakeFiles/untitled.dir/main.cpp.obj	69924ca5ebb34cfd
+12	2358	7016420179192818	CMakeFiles/untitled.dir/tasks_rk1.cpp.obj	36d6379008fe82e1
+2142	2345	7011768606282029	untitled.exe	2ac3596ce7de1f75
+1	339	7016430637069991	build.ninja	1f4dd61929fe3b5d
+12	2871	7016430666229477	CMakeFiles/untitled.dir/tasks_rk1.cpp.obj	36d6379008fe82e1
+5	2021	7016431764604042	CMakeFiles/untitled.dir/main.cpp.obj	69924ca5ebb34cfd
+2021	2918	7016431773553996	untitled.exe	2ac3596ce7de1f75
+5	2035	7016432335373502	CMakeFiles/untitled.dir/main.cpp.obj	69924ca5ebb34cfd
+2035	2174	7016432336753510	untitled.exe	2ac3596ce7de1f75
+5	2234	7016439941936030	CMakeFiles/untitled.dir/main.cpp.obj	69924ca5ebb34cfd
+15	2249	7016439942106212	CMakeFiles/untitled.dir/tasks_rk1.cpp.obj	36d6379008fe82e1
+2250	2459	7016439944186455	untitled.exe	2ac3596ce7de1f75
+4	2723	7016445184612267	CMakeFiles/untitled.dir/main.cpp.obj	69924ca5ebb34cfd
+14	2743	7016445184830611	CMakeFiles/untitled.dir/tasks_rk1.cpp.obj	36d6379008fe82e1
+2743	2928	7016445186650627	untitled.exe	2ac3596ce7de1f75
