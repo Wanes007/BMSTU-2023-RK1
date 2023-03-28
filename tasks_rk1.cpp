@@ -97,11 +97,6 @@ void buildTree(int height) {
     }
 }
 
-
-
-
-
-
 char* convertDecToBin(int number){
     char* string = new char[33];
     int count = 0;
@@ -129,21 +124,11 @@ void writeToFile(const char* fileName, const char* strNum) {
 }
 
 
-
-
-
-
-
-
-
 void randFill(float* ar, int N){
     for(int i = 0; i < N; i++){
         ar[i] = static_cast<float>(rand())/RAND_MAX;
     }
 }
-
-
-
 std::vector<std::pair<int,float>> averStr2DArray(const float* ar, int colCount, int rowCount){
     std::vector<std::pair<int,float>> res(rowCount);
     for(int i = 0; i < rowCount; i++){
