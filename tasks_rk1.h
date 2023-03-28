@@ -33,7 +33,7 @@ void buildTree(int height);
 
 
 char* convertDecToBin(int number);
-
+void writeToFile(const char* fileName, const char* strNum);
 
 
 void randFill(float* ar, int N);
