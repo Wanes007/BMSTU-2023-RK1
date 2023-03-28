@@ -26,10 +26,7 @@ public :
 
 };
 
-
-
 void buildTree(int height);
-
 
 
 char* convertDecToBin(int number);
