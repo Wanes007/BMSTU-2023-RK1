@@ -6,7 +6,7 @@ void task_1(){
 }
 
 void task_2(){
-    convertDecToBin(25);
+    writeToFile("result_task2.txt",convertDecToBin(25));
 }
 
 void task_4(){
