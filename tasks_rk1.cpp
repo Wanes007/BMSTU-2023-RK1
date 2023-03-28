@@ -77,6 +77,8 @@ void WorkWithFile::writeStatInfoToFile(const char *outFile){
 
 
 
+
+
 void buildTree(int height) {
     int i = 0, j;
     while (i < height) {
@@ -94,6 +96,9 @@ void buildTree(int height) {
         i++;
     }
 }
+
+
+
 
 
 
@@ -117,12 +122,27 @@ char* convertDecToBin(int number){
     return CoolString;
 }
 
+void writeToFile(const char* fileName, const char* strNum) {
+    FILE *pFile = fopen(fileName, "w");
+    fprintf(pFile, "%s", strNum);
+    fclose(pFile);
+}
+
+
+
+
+
+
+
+
 
 void randFill(float* ar, int N){
     for(int i = 0; i < N; i++){
         ar[i] = static_cast<float>(rand())/RAND_MAX;
     }
 }
+
+
 
 std::vector<std::pair<int,float>> averStr2DArray(const float* ar, int colCount, int rowCount){
     std::vector<std::pair<int,float>> res(rowCount);
