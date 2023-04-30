@@ -123,6 +123,37 @@ void writeToFile(const char* fileName, const char* strNum) {
     fclose(pFile);
 }
 
+char* convertBinToHex(const char* binNum){
+  int len = strlen(binNum);
+  char* hexNum = new char[(len+3)/4 + 1];
+  int i = len - 1;
+  int j = 0;
+  while(i >= 0){
+    int sum = 0, base = 1;
+    for(int k = 0; k < 4; ++k){
+      if(i >= 0){
+        sum += (binNum[i] - '0') * base;
+        base *= 2;
+        --i;
+      }
+    }
+    if(sum < 10) hexNum[j] = sum + '0';
+    else hexNum[j] = sum - 10 + 'A';
+    ++j;
+  }
+  hexNum[j] = '\0';
+  int hexLen = strlen(hexNum);
+  for(int k = 0; k < hexLen/2; ++k)
+    std::swap(hexNum[k], hexNum[hexLen - k - 1]);
+  return hexNum;
+}
+
+void writeToFile(const char* fileName, int writeAppend, const char* hexNum, const char* binNum){
+  FILE* pFile = fopen(fileName, "w");
+  fprintf(pFile, "%s\t%s", binNum, hexNum);
+  fclose(pFile);
+}
+
 
 void randFill(float* ar, int N){
     for(int i = 0; i < N; i++){
