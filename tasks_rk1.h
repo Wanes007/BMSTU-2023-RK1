@@ -28,6 +28,8 @@ public :
 
 void buildTree(int height);
 
+char* convertBinToHex(const char* binNum);
+void writeToFile(const char* fileName, int writeAppend, const char* hexNum, const char* binNum);
 
 char* convertDecToBin(int number);
 void writeToFile(const char* fileName, const char* strNum);
